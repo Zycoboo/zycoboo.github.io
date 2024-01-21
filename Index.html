@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        #message {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #btnSubmit {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff4081;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="message">
+    <h2>Will you be my Valentine?</h2>
+    <p>Dear Ericca,</p>
+    <p>I cherish the moments we share and the love we have. Will you be my Valentine?</p>
+    <button id="btnSubmit">Yes, I'd love to!</button>
+</div>
+<div id="response" style="display: none; margin-top: 50px;">
+    <h2>Yay! 💖</h2>
+    <p>I'm so happy to be your Valentine! Let's make it special together.</p>
+</div>
+
+<script>
+    // JavaScript to handle button click and show response
+    document.getElementById('btnSubmit').addEventListener('click', function() {
+        document.getElementById('message').style.display = 'none';
+        document.getElementById('response').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
